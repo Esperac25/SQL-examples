@@ -1,0 +1,7 @@
+Quick explanation of the gameshop database diagram using crows foot notation.
+
+Crows foot notation- In crow’s foot notation, an entity is represented by a rectangle, with its name on the top. The name is singular (entity) rather than plural (entities). An attribute is a property that describes a particular entity. The attribute (s) that uniquely distinguishes an instance of the entity is the identifier. 
+
+In the customers table the primary key customer_id has a 1 to many relationship with the orders table foreign key customer_id. This is because the customer can have multiple orders.
+
+In the products table the primary key product_id has a many to many relationship with the orders table foreign key product_id. This is because there can be more than one of the same product sharing the same id.
